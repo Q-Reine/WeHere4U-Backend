@@ -3,11 +3,12 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import mainRouter from './Routes/indexRouting.js';
+
 import bodyParser from 'body-parser';
 
 
 dotenv.config();
-const port =process.env.PORT||5002
+const port =process.env.PORT||3000
 const db_user =process.env.DB_USER;
 const db_name =process.env.DB_NAME;
 const db_pass =process.env.DB_PASS;
