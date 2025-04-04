@@ -17,7 +17,7 @@ const db_pass =process.env.DB_PASS;
 
 const app=express();
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://we-here4-u-2.vercel.app/'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
